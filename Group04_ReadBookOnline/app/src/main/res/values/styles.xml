@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionModeStyle">@style/toolbar.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/myclosebutton</item>
+    </style>
+    <!--thay đổi màu mũi tên-->
+    <style name="myclosebutton" parent="Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:tint">#ffff</item> <!-- whatever color -->
+    </style>
+    <!--màu toolbar-->
+    <style name="toolbar.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/TextToolbar</item>
+        <item name="subtitleTextStyle">@style/TextToolbar</item>
+    </style>
+    <!--màu part toolbar-->
+    <style name="TextToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:backgroundTint">#ffff</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">#ffff</item>
+    </style>
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+    </style>
+
+    <style name="EditTextCustom" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--<item name="android:backgroundTint">@color/colorPrimaryDark</item>-->
+    </style>
+
+    //rating bar
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorAccent">@android:color/holo_orange_light</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

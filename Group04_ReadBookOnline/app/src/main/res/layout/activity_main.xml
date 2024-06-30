@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edit"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#ffff"
+            android:textColorHint="#c0c0c0"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <!-- ViewPager2 để hiển thị quảng cáo -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerAds"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+
+
+    <ListView
+        android:id="@+id/DSSach"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/green"
+            android:text="Home Page" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/green"
+            android:text="Profile" />
+    </LinearLayout>
+</LinearLayout>

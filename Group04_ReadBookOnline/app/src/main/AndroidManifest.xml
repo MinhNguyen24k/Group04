@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/anytime"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/anytime"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Group04_ReadBookOnline"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".adapter.SuKienReturn" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".NguoiDungActivity" />
+        <activity android:name=".QuanLyOrderActivity" />
+
+        <activity android:name=".ChiTietTruyenActivity" />
+        <activity android:name=".adapter.doctruyen" />
+        <activity android:name=".adapter.AddDanhMucTruyen" />
+        <activity android:name=".adapter.AddTruyen" />
+        <activity android:name=".ChiTietQuanLyOrderActivity" />
+        <activity android:name=".adapter.XemTruyen" />
+        <activity android:name=".adapter.SuaTruyen" />
+    </application>
+
+</manifest>

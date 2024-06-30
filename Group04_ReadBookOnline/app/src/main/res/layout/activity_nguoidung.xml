@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="16dp">
+
+        <!-- Ảnh đại diện tròn -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_background_white"
+            android:src="@drawable/reader"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"/>
+
+        <!-- Tên tài khoản -->
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imgProfile"
+            android:text="User Name"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- Danh sách truyện đã mua -->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvPurchaseHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách truyện đã mua"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <!-- Danh sách lịch sử mua hàng -->
+    <ListView
+        android:id="@+id/listViewPurchaseHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="16dp"/>
+
+
+
+    <!-- Nút Xem và Đăng Xuất -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Nút Xem -->
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detail"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#F44336"/>
+
+        <!-- Nút Đăng Xuất -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="@color/green"
+            android:text="Logn out" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Nút trang chủ -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Home Page"
+            android:backgroundTint="@color/green"/>
+
+        <!-- Nút Profile -->
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="Profile"
+            android:backgroundTint="@color/green"/> <!-- Khoảng cách giữa nút trang chủ và Profile -->
+    </LinearLayout>
+</LinearLayout>

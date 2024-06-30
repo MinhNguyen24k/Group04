@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Ảnh truyện -->
+    <ImageView
+        android:id="@+id/imgTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doraemon"/>
+
+    <!-- Tên truyện -->
+    <TextView
+        android:id="@+id/tvTenTruyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Truyện"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgTruyen"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tên danh mục -->
+    <TextView
+        android:id="@+id/tvDanhMuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh Mục"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvTenTruyen"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Giá -->
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá: "
+        android:textSize="18sp"
+        android:layout_below="@+id/tvDanhMuc"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Ô Giới Thiệu -->
+    <ScrollView
+        android:id="@+id/scrollViewGioiThieu"
+        android:layout_width="381dp"
+        android:layout_height="106dp"
+        android:layout_below="@+id/tvGia"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvGioiThieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giới Thiệu:"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <!-- Nút Mua -->
+    <Button
+        android:id="@+id/btnMua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mua"
+        android:layout_below="@+id/scrollViewGioiThieu"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white" />
+
+    <!-- Nút Quay Lại -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay Lại"
+        android:layout_below="@+id/btnMua"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"/>
+</RelativeLayout>
